@@ -3,26 +3,35 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     //Validate text box
     document.getElementById("contactError").style.display = "none";
-    // if (document.getElementById("contactMessage").value.trim() === "") {
-    //     document.getElementById("contactError").innerHTML = "Kindly type your Message";
-    //     document.getElementById("contactError").style.display = "block";
-    //     return false;
-    // }
-    // else if (document.getElementById("contactName").value.trim() === "") {
-    //     document.getElementById("contactError").innerHTML = "Kindly provide your Name";
-    //     document.getElementById("contactError").style.display = "block";
-    //     return false;
-    // }
-    // else 
-    if (document.getElementById("contactEmail").value.trim() === "") {
+    if (document.getElementById("contactMessage").value.trim() === "") {
+        document.getElementById("contactError").innerHTML = "Kindly type your Message";
+        document.getElementById("contactError").style.display = "block";
+        return false;
+    }
+    else if (document.getElementById("contactName").value.trim() === "") {
+        document.getElementById("contactError").innerHTML = "Kindly provide your Name";
+        document.getElementById("contactError").style.display = "block";
+        return false;
+    }
+    else if (document.getElementById("contactPhone").value.trim() === "") {
+        document.getElementById("contactError").innerHTML = "Kindly provide your Contact";
+        document.getElementById("contactError").style.display = "block";
+        return false;
+    }
+    else if (document.getElementById("contactEmail").value.trim() === "") {
         document.getElementById("contactError").innerHTML = "Kindly provide your Email address";
         document.getElementById("contactError").style.display = "block";
         return false;
     }
+    // else if (document.getElementById("contactAddress").value.trim() === "") {
+    //     document.getElementById("contactError").innerHTML = "Kindly provide your Address";
+    //     document.getElementById("contactError").style.display = "block";
+    //     return false;
+    // }
     //Calling API
     document.querySelector("#btnContactSumbit").innerHTML = "Submitting..";
     let data = new FormData(form);
-    fetch('https://script.google.com/macros/s/AKfycbwGJIR3yRIVN21_mBV_sQ8dO3hRxFUvROTNYEXr5dEbgu_jOGzv_-Dr8MvsETHJyJw3bw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyy7sfQpsacdS511-m5zw3VN9GYeTwkHI9GY9Y-tH6bnBLRd-Hxcd18FdcWTlRi2Zv7/exec', {
         method: "POST",
         body: data
     })
@@ -31,9 +40,10 @@ form.addEventListener('submit', (e) => {
 
             var myModal = new bootstrap.Modal(document.getElementById('modalContactSubmittedSuccess'));
             myModal.show();
-            document.querySelector("#btnContactSumbit").innerHTML = "SEND";
-            // document.getElementById("contactMessage").value = "";
-            // document.getElementById("contactName").value = "";
+            document.querySelector("#btnContactSumbit").innerHTML = "Send Us";
+            document.getElementById("contactMessage").value = "";
+            document.getElementById("contactPhone").value = "";
+            document.getElementById("contactName").value = "";
             document.getElementById("contactEmail").value = "";
 
         });

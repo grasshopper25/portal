@@ -3352,8 +3352,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-bg: #00A17F;
+  --bs-btn-border-color: #00A17F;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #558985;
   --bs-btn-hover-border-color: #50817e;
@@ -3369,8 +3369,8 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #7464a1;
-  --bs-btn-border-color: #7464a1;
+  --bs-btn-bg: #393939;
+  --bs-btn-border-color: #393939;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #635589;
   --bs-btn-hover-border-color: #5d5081;
@@ -12941,11 +12941,11 @@ body {
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 1.05rem 1.5rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.08rem;
   border: 0;
 }
 
@@ -13019,7 +13019,7 @@ body {
 }
 
 .vision-section {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .service-section {
@@ -13076,14 +13076,14 @@ body {
   background-size: cover;
 }
 
-.signup-section .form-signup input {
+.signup-section .form-signup input, .signup-section .form-signup textarea {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.08rem;
   border: 0;
 }
 
@@ -13139,7 +13139,7 @@ body {
 
 
 body {
-  background: #FCF7F1;
+  background: #ffffff;
 }
 
 .btn-call {
@@ -13220,13 +13220,13 @@ body {
 /* end ::: gallery */
 
 .card-title {
-  color: #00477B !important;
+  color: #00A17F;
   font-weight: bold;
 }
 
 .card-text {
-  font-size: small !important;
-  color: var(--bs-secondary-color) !important;
+  font-size: small;
+  /* color: var(--bs-secondary-color) !important; */
 }
 
 .card-title span {
