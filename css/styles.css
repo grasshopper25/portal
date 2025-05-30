@@ -3873,6 +3873,7 @@ fieldset:disabled .btn {
     margin-top: 100px;
   }
 }
+
 @media (min-width: 300px) {
   #carouselExampleCaptions {
     margin-top: 100px;
@@ -13076,7 +13077,8 @@ body {
   background-size: cover;
 }
 
-.signup-section .form-signup input, .signup-section .form-signup textarea {
+.signup-section .form-signup input,
+.signup-section .form-signup textarea {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
@@ -13152,10 +13154,10 @@ body {
   /* border-bottom: unset !important; */
 }
 
-#section-about {
+/* #section-about {
   padding-top: 70px !important;
   padding-bottom: 70px !important;
-}
+} */
 
 /* start ::: slide up */
 .box {
@@ -13330,4 +13332,15 @@ body {
     visibility: visible;
     display: block !important;
   }
+}
+
+.featurs-icon {
+  font-weight: 500;
+  font-size: 4rem;
+  color: #FFFFFF80;
+}
+
+.featurs-heading {
+  font-size: small;
+  color: #FFAD00;
 }
