@@ -13154,6 +13154,14 @@ body {
   /* border-bottom: unset !important; */
 }
 
+.btn-call-mobile{
+  border: 1px solid #666;
+  font-size: xx-small;
+  padding: 8px !important;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
 /* #section-about {
   padding-top: 70px !important;
   padding-bottom: 70px !important;
