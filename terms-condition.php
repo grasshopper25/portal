@@ -468,8 +468,8 @@
     <!-- Bottom -->
     <div class="px-4 border-t border-white/10 md:px-12 lg:px-20 py-5 flex flex-col md:flex-row justify-center items-center gap-4">
 
-        <p class="text-sm text-white/40 text-center md:text-left">
-            © 2025 Grasshopper Career Consultant. All Rights Reserved.
+    <p class="text-sm text-white/40 text-center md:text-left">
+            © <?php echo date('Y'); ?> Grasshopper Career Consultant. All Rights Reserved. | <a href="privacy-policy.php" class="text-white hover:text-teal-400 transition">Privacy Policy</a> | <a href="terms-and-conditions.php" class="text-white hover:text-teal-400 transition">Terms & Conditions</a>
         </p>
 
     </div>

@@ -253,7 +253,7 @@
                 <!-- Preferred College -->
                 <div>
                     <label class="block text-sm font-medium text-white mb-2">Preferred College</label>
-                    <input type="text" placeholder="Enter College Name" class="w-full rounded-lg bg-white/30 border-0 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none placeholder:text-white/70">
+                    <input type="text" placeholder="Enter College Name" name="college" id="college" class="w-full rounded-lg bg-white/30 border-0 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none placeholder:text-white/70">
                 </div>
                 <!-- Capcha -->
                 <div>
@@ -1381,7 +1381,7 @@
     <div class="px-4 border-t border-white/10 md:px-12 lg:px-20 py-5 flex flex-col md:flex-row justify-center items-center gap-4">
 
         <p class="text-sm text-white/40 text-center md:text-left">
-            © 2025 Grasshopper Career Consultant. All Rights Reserved.
+        © <?php echo date('Y'); ?> Grasshopper Career Consultant. All Rights Reserved. | <a href="privacy-policy.php" class="text-white hover:text-teal-400 transition">Privacy Policy</a> | <a href="terms-and-conditions.php" class="text-white hover:text-teal-400 transition">Terms & Conditions</a>
         </p>
 
     </div>
